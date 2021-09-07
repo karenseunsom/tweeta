@@ -74,7 +74,7 @@ router.post('/login', async (req, res) => {
     return
   }
   // login
-  // req.session.user = user
+  req.session.user = user
   // respond with success
   res.json({
     success: 'Successfully logged in'
